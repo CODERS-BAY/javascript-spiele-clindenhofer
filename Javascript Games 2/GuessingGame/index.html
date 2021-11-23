@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Guessing Game</h1>
+    <div class="guessing-container">
+    <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+    <form class="choices-container">
+        <label for="upperLimit">
+            Pick the upper Limit:
+        </label>
+            <input type="number" id=upperLimit min="0"  placeholder="limit">
+        <label for="attempts">
+            Pick number of attempts:
+        </label>
+            <input type="number" id="attempts" min="0" placeholder="attempts">
+        <br>
+        <button class="generate-button" id="generate-btn" type="button">Generate Number</button>
+        <br>
+        <label for="guess">
+            Guess the number:
+        </label>
+            <input type="number" id="guess" min="0" placeholder="your pick">
+        <br>
+        <button class="check-button" id="check-btn" type="button" >Check</button>
+        <h3 id="h3"></h3>
+        <h2 id="h2"></h2>
+    </form>
+    </div>
+    <div class="col-4"></div>
+    </div>
+    </div>
+    <script type="text/Javascript" src="js/script.js"></script>
+</body>
+</html>

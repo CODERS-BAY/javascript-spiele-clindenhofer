@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2b2525;
+    --highlight: #0f8f53;
+    --background: rgb(103, 202, 119);
+    --background-btn: rgb(82, 167, 110);
+}
+
+html {
+    background-color: var(--background)
+}
+
+html, body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.choices-container{
+    border: 3px solid var(--highlight);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 750px;
+    padding: 5rem;
+}
+
+.choices-container label {
+    display: block;
+    font-size: 20px;
+    padding: 1rem 0 .5rem;
+    text-transform: uppercase;
+}
+
+#upperLimit, #attempts, #guess {
+    background: var(--background-btn);
+    border: 2px solid var(--highlight);    
+    border-radius: 5px;
+    display: block;
+    font-size: 18px;
+    padding: .5rem;
+    width: 100%;
+}
+
+.generate-button, .check-button {
+    background: var(--background-btn);
+    border: 2px solid var(--highlight);
+    border-radius: 5px;
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: .5rem;
+    text-transform: uppercase;
+    transition: 300ms;
+    width: 50%;
+}
+
+#generate-btn:hover {
+    background: var(--highlight);
+    color: var(--background-btn);
+}
+
+#check-btn:hover {
+    background: var(--highlight);
+    color: var(--background-btn);
+}
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codebreaker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Codebreaker</h1>
+    <div class="codebreaker-container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+        <form class="numbers-container">
+            <label for="numberInput">
+                Number:
+            </label>
+                <input type="number1" id="number1-btn" min="1" value="1" max="9">
+                <input type="number2" id="number2-btn" min="1" value="1" max="9">
+                <input type="number3" id="number3-btn" min="1" value="1" max="9">
+        <h2>Break the code in 12 rounds!</h2>
+        <button class="compare-button" id="compare-btn" type="button" onclick="getInputValue()">Compare</button>
+        <br>
+        <br>        
+        <h3 id="h3"></h3>
+        </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    </div>
+    
+
+    <script type="text/Javascript" src="js/script.js"></script>
+</body>
+</html>
