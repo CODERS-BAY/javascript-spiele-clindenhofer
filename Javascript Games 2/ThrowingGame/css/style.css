@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #222121;
+    --highlight: #581269;
+    --background: rgb(140, 169, 233);
+    --background-btn: rgb(103, 125, 223);
+}
+
+html {
+    background-color: var(--background)
+}
+
+html, body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.choices-form{
+    border: 3px solid var(--highlight);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 750px;
+    padding: 5rem;
+}
+
+.choices-form label {
+    display: block;
+    font-size: 20px;
+    padding: 1rem 0 .5rem;
+    text-transform: uppercase;
+}
+
+#fallingSpeed, #speed, #angle {
+    background: var(--background-btn);
+    border: 2px solid var(--highlight);    
+    border-radius: 5px;
+    display: block;
+    font-size: 18px;
+    padding: .5rem;
+    width: 100%;
+}
+
+.calculate-button, .reset-button {
+    background: var(--background-btn);
+    border: 2px solid var(--highlight);
+    border-radius: 5px;
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: .5rem;
+    text-transform: uppercase;
+    transition: 300ms;
+    width: 50%;
+}
+
+#calc-btn:hover {
+    background: var(--highlight);
+    color: var(--background-btn);
+}
+
+#reset-btn:hover {
+    background: var(--highlight);
+    color: var(--background-btn);
+}
+
+

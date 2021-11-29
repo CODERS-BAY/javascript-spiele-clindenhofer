@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #140d57;
+    --highlight: #2d51b4;
+    --background: rgb(169, 155, 223);
+    --background-btn: rgb(157, 125, 233);
+}
+
+html {
+    background-color: var(--background)
+}
+
+html, body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* .choices-container{
+    border: 5px solid var(--highlight);
+    border-radius: 3px;
+    margin: 2rem auto;
+    max-width: 400px;
+    padding: 5rem;
+} */
+
+
+.choices-container button {
+    background: var(--background-btn);
+    border: 5px solid var(--highlight);    
+    border-radius: 3px;
+    display: block;
+    font-size: 25px;
+    margin: 15px;
+    cursor: pointer;
+    padding: .5rem;
+    width: 100%;
+
+}
+
+#reset {
+    background: var(--background-btn);
+    border: 2px solid var(--highlight);
+    border-radius: 3px;
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: bold;
+    margin: 1rem 0;
+    padding: .5rem;
+    text-transform: uppercase;
+    transition: 500ms;
+    width: 50%;
+}
+
+#generate-btn:hover {
+    background: var(--highlight);
+    color: var(--background-btn);
+}
+
+
+
